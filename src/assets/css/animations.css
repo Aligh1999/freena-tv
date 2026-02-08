@@ -6,3 +6,13 @@
         opacity: 1;
     }
 }
+
+.menu-anim {
+    transition: transform 1s;
+    transform: translateX(-100%);
+
+    &.enter-done,
+    &.enter-active {
+        transform: translateX(0);
+    }
+}

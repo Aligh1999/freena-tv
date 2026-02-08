@@ -4,7 +4,7 @@ import MenuBtn from "./menu/menu";
 const Header = () => {
     return (
         <div className="m-container">
-            <div className="flex items-center gap-8 mt-8">
+            <div className="flex items-center gap-8 pt-8">
                 <MenuBtn />
 
                 <hr className="border-t-2 border-dashed border-white/10 grow" />
@@ -19,7 +19,13 @@ const Header = () => {
                         to="/"
                         className="fit-cover p-4 fit-center"
                     >
-                        <img src="/images/logo/1.png" width={80} height={50} className="w-full" />
+                        <img
+                            src="/images/logo/1.png"
+                            width={375}
+                            height={227}
+                            className="w-full"
+                            alt="فرینا TV"
+                        />
                     </Link>
                 </div>
 

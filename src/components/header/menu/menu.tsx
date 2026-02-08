@@ -1,22 +1,29 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import invariant from "tiny-invariant";
 import { CSSTransition } from "react-transition-group";
 import ExtraBoxPortal from "components/shared/extraBoxPortal";
+import Inner from "./inner";
+import { createSearchParams, useSearchParams } from "react-router";
 
 const MenuBtn = () => {
-    const [show, setShow] = useState(false);
     const nodeRef = useRef<HTMLDivElement | null>(null);
+    const [searchParams, setSearchParams] = useSearchParams();
 
-    const toggleHandler = () => {
+    useEffect(() => {
         const el = document.querySelector("#root");
         invariant(el);
 
-        if (show) {
-
-        } else {
+        if (searchParams.has("menu"))
             el.classList.add("translate-x-1/2");
-            setShow(true);
-        }
+        else
+            el.classList.remove("translate-x-1/2");
+    }, [searchParams])
+
+    const toggleHandler = () => {
+        const newParams = createSearchParams(searchParams);
+        newParams.set("menu", "true");
+
+        setSearchParams(newParams);
     }
 
     return (
@@ -32,13 +39,18 @@ const MenuBtn = () => {
             <ExtraBoxPortal selector="#extra-box">
                 <CSSTransition
                     nodeRef={nodeRef}
-                    timeout={500}
+                    timeout={800}
                     unmountOnExit={true}
-                    in={show}
+                    in={searchParams.has("menu")}
                 >
-                    <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-50 anim-c1 transition-opacity delay-500" />
+                    <div
+                        className="fixed top-0 left-0 w-full h-full bg-black/50 z-10 anim-c1 transition-opacity duration-800"
+                        ref={nodeRef}
+                    />
                 </CSSTransition>
             </ExtraBoxPortal>
+
+            <Inner />
         </>
     )
 }
