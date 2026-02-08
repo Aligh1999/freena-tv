@@ -1,10 +1,12 @@
 @import "tailwindcss";
+@import "./fontiran.css";
 
 :root {
     --font-icon: "Font Awesome 7 Pro";
     --font-feature-settings: "ss02";
     --font-feature-settings-eng: "ss00";
     --font-family: IRANSansX;
+    --primary-color: #00275B;
 }
 
 * {
@@ -16,7 +18,7 @@
 
 @theme {
     --font-sans: var(--font-family);
-    --color-primary: #09314B;
+    --color-primary: var(--primary-color);
 }
 
 @utility dir-ltr {
@@ -45,4 +47,26 @@
     -moz-font-feature-settings: "ss00" !important;
     -webkit-font-feature-settings: "ss00" !important;
     font-feature-settings: "ss00" !important;
+}
+
+body {
+    background: linear-gradient(90deg, #00275B 0%, #161616 66.87%);
+    min-height: 100vh;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.m-container {
+    max-width: calc(1270px + 2rem);
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+#root {
+    transition: translate .5s;
 }
