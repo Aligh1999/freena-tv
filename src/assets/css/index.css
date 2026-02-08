@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+    --font-icon: "Font Awesome 7 Pro";
+    --font-feature-settings: "ss02";
+    --font-feature-settings-eng: "ss00";
+    --font-family: IRANSansX;
+}
+
+* {
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+    outline: none
+}
+
+@theme {
+    --font-sans: var(--font-family);
+    --color-primary: #09314B;
+}
+
+@utility dir-ltr {
+    direction: ltr;
+}
+
+@utility dir-rtl {
+    direction: rtl;
+}
+
+@utility fit-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+@utility fit-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@utility eng-number {
+    -moz-font-feature-settings: "ss00" !important;
+    -webkit-font-feature-settings: "ss00" !important;
+    font-feature-settings: "ss00" !important;
+}
