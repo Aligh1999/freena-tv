@@ -8,11 +8,20 @@
 }
 
 .menu-anim {
-    transition: transform 1s;
-    transform: translateX(-100%);
+    opacity: 0;
+    transition: opacity .2s;
+
+    .inner {
+        transition: transform .2s;
+        transform: scale(.75);
+    }
 
     &.enter-done,
     &.enter-active {
-        transform: translateX(0);
+        opacity: 1;
+
+        .inner {
+            transform: scale(1);
+        }
     }
 }
