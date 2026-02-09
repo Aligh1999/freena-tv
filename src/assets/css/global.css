@@ -58,9 +58,14 @@ body {
     overflow-y: auto;
 }
 
-.m-container {
+@utility m-container {
     max-width: calc(1270px + 2rem);
     padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.m-container-no-p {
+    max-width: calc(1270px + 2rem);
     margin: 0 auto;
 }
 
@@ -70,4 +75,13 @@ button {
 
 #root {
     transition: translate 1s;
+}
+
+.start-circle {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(44.33% 44.33% at 49.54% 48.57%, #FF7423 0%, #D6611D 8%, #A54B16 17%, #783610 27%, #53250B 37%, #351807 48%, #1D0D04 59%, #0C0501 70%, #030100 83%, #000000 100%);
+    background-blend-mode: screen;
+    mix-blend-mode: screen;
+    transform: rotate(-89.05deg);
 }

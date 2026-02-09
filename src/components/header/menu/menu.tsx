@@ -46,7 +46,7 @@ const MenuBtn = () => {
                     in={show}
                 >
                     <div
-                        className="fixed top-0 left-0 w-full h-full bg-black/50 z-10 anim-c1 transition-opacity duration-800"
+                        className="fixed top-0 left-0 w-full h-full bg-black/50 z-10 anim-c1 transition-opacity"
                         ref={nodeRef}
                     />
                 </CSSTransition>
