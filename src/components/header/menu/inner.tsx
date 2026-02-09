@@ -1,8 +1,10 @@
 import ExtraBoxPortal from "components/shared/extraBoxPortal";
 import moment from "moment-jalaali";
 import { useRef } from "react";
-import { Link, useSearchParams } from "react-router";
+import { useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router";
 import { CSSTransition } from "react-transition-group";
+import type { IRootState } from "redux/store";
 import { nowTimestamp } from "utils";
 
 const NAVS = [
@@ -33,8 +35,11 @@ const NAVS = [
 ]
 
 const Inner = () => {
-    const [searchParams] = useSearchParams();
     const nodeRef = useRef<HTMLDivElement | null>(null);
+
+    const navigate = useNavigate();
+    const stackHistory = useSelector((state: IRootState) => state.app.stackHistory);
+    const show = stackHistory[0] === "menu";
 
     return (
         <ExtraBoxPortal selector="#extra-box">
@@ -42,13 +47,31 @@ const Inner = () => {
                 nodeRef={nodeRef}
                 timeout={1000}
                 unmountOnExit={true}
-                in={searchParams.has("menu")}
+                in={show}
                 appear={true}
             >
                 <div
                     className="bg-[#09314B] fixed top-0 left-0 w-full h-full menu-anim z-11 flex flex-col items-stretch justify-center bg-[url('/images/globe-dot.png')] bg-no-repeat bg-center"
                     ref={nodeRef}
                 >
+                    <button
+                        type="button"
+                        className="text-xl absolute pr-10 p-10 right-0 top-0 hidden lg:block"
+                        onClick={() => navigate(-1)}
+                    >
+                        <i className="fa-regular fa-arrow-right" />
+                    </button>
+
+                    <div className="lg:hidden">
+                        <button
+                            type="button"
+                            className="text-lg p-4"
+                            onClick={() => navigate(-1)}
+                        >
+                            <i className="fa-regular fa-arrow-right" />
+                        </button>
+                    </div>
+
                     <div className="min-h-0 overflow-auto dir-ltr py-16">
                         <div className="flex flex-col-reverse lg:flex-row justify-center items-center dir-rtl">
                             <div className="flex-1 basis-0">
