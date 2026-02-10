@@ -60,10 +60,17 @@ const VideoSlider = () => {
                                     className="h-full"
                                     centeredSlides
                                 >
-                                    <SwiperSlide>Slide 1</SwiperSlide>
-                                    <SwiperSlide>Slide 2</SwiperSlide>
-                                    <SwiperSlide>Slide 3</SwiperSlide>
-                                    <SwiperSlide>Slide 4</SwiperSlide>
+                                    {
+                                        [...Array(4)].map((_, i) => (
+                                            <SwiperSlide key={`slide-${i}`}>
+                                                <div className="h-full relative">
+                                                    <img src="/temp/7.png" className="w-full h-full object-cover" />
+
+                                                    <div className="fit-cover bg-[#161616]/50 backdrop-blur-lg" />
+                                                </div>
+                                            </SwiperSlide>
+                                        ))
+                                    }
                                 </Swiper>
                             </div>
                         </div>
