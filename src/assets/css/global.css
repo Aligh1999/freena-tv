@@ -132,3 +132,17 @@ button {
         height: 1rem
     }
 }
+
+.home-news-pagination {
+    --swiper-pagination-bullet-inactive-color: #fff;
+    --swiper-pagination-color: #fff;
+    --swiper-pagination-bullet-border-radius: 10rem;
+
+    .swiper-pagination-bullet {
+        transition: width .25s;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 1rem
+    }
+}

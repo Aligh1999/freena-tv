@@ -48,6 +48,38 @@ const VideoSec = () => {
                                     </div>
                                 </div>
                             </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className="h-full rounded-2xl overflow-hidden relative">
+                                    <img
+                                        src="/temp/8.png"
+                                        className="w-full h-auto"
+                                    />
+
+                                    <div className="fit-cover fit-center">
+                                        <div className="relative size-16 fit-center">
+                                            <div className="fit-cover fit-center backdrop-blur-md rounded-lg rotate-45 border-y border-white/50" />
+                                            <i className="fa-solid fa-play relative text-2xl" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className="h-full rounded-2xl overflow-hidden relative">
+                                    <img
+                                        src="/temp/8.png"
+                                        className="w-full h-auto"
+                                    />
+
+                                    <div className="fit-cover fit-center">
+                                        <div className="relative size-16 fit-center">
+                                            <div className="fit-cover fit-center backdrop-blur-md rounded-lg rotate-45 border-y border-white/50" />
+                                            <i className="fa-solid fa-play relative text-2xl" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
                         </Swiper>
                     </div>
 
