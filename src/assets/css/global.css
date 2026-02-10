@@ -72,8 +72,6 @@ body {
     background: linear-gradient(90deg, #00275B 0%, #161616 66.87%);
     min-height: 100vh;
     color: #fff;
-    overflow-x: hidden;
-    overflow-y: auto;
     padding-bottom: 20rem;
 }
 
@@ -81,11 +79,13 @@ body {
     max-width: calc(1270px + 2rem);
     padding: 0 1rem;
     margin: 0 auto;
+    width: 100%;
 }
 
 .m-container-no-p {
     max-width: calc(1270px + 2rem);
     margin: 0 auto;
+    width: 100%;
 }
 
 button {
@@ -103,4 +103,32 @@ button {
     background-blend-mode: screen;
     mix-blend-mode: screen;
     transform: rotate(-89.05deg);
+}
+
+.fade-in {
+    animation: fadeIn .3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.home-tourism-slider {
+    --swiper-pagination-bullet-inactive-color: #fff;
+    --swiper-pagination-color: #fff;
+    --swiper-pagination-bullet-border-radius: 10rem;
+
+    .swiper-pagination-bullet {
+        transition: height .25s;
+    }
+
+    .swiper-pagination-bullet-active {
+        height: 1rem
+    }
 }

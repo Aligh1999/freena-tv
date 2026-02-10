@@ -1,0 +1,6 @@
+.blurCircleBox {
+    background: radial-gradient(48.14% 48.52% at 49.47% 49.75%, #003AFF 0%, rgba(43, 70, 147, 0.35) 64%, rgba(67, 77, 89, 0) 100%);
+    background-blend-mode: color-dodge;
+    mix-blend-mode: color-dodge;
+    opacity: 0.15;
+}

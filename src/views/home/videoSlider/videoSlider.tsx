@@ -12,7 +12,7 @@ const VideoSlider = () => {
             <div className="p-3 lg:p-6 relative">
                 <div className="bg-white/3 border border-white/10 backdrop-blur-sm absolute top-0 right-0 w-full h-1/2 rounded-2xl" />
 
-                <div className="bg-[#161616] relative rounded-t-2xl p-4">
+                <div className="bg-[#161616] relative rounded-t-2xl p-4 lg:p-0">
                     <div className="lg:m-container">
                         <div className="flex flex-1 gap-0 lg:gap-8 flex-col-reverse lg:flex-row pt-22 sm:pt-16 lg:pt-0">
                             <div className="py-12 flex-1 basis-0">
