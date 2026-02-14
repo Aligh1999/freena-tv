@@ -1,0 +1,10 @@
+.titleBlur {
+    background: radial-gradient(48.14% 48.52% at 49.47% 49.75%, #003AFF 0%, rgba(43, 70, 147, 0.35) 64%, rgba(67, 77, 89, 0) 100%);
+    background-blend-mode: color-dodge;
+    mix-blend-mode: color-dodge;
+}
+
+.slideBorder {
+    background: #00275B;
+    background: linear-gradient(90deg, rgba(0, 39, 91, 1) 0%, rgba(0, 17, 40, 0) 50%, rgba(0, 0, 0, 0) 100%);
+}

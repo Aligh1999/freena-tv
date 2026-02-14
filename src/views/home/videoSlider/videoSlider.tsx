@@ -8,7 +8,7 @@ const VideoSlider = () => {
     const [activeIndex] = useState(1);
 
     return (
-        <div className="pb-24 bg-[url(/images/globe.png)] bg-bottom-right bg-no-repeat">
+        <div className="pb-24 bg-[url(/images/globe.png)] bg-bottom-right bg-no-repeat overflow-hidden">
             <div className="p-3 lg:p-6 relative">
                 <div className="bg-white/3 border border-white/10 backdrop-blur-sm absolute top-0 right-0 w-full h-1/2 rounded-2xl" />
 

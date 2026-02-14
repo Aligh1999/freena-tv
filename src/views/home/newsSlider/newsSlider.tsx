@@ -13,13 +13,13 @@ const NewsSlider = () => {
                 <div className="absolute left-0 top-0 h-screen w-full -z-1 bg-[url('/images/globe-dot.png')] bg-no-repeat bg-bottom-left -translate-y-1/2" />
 
                 <div className="m-container relative">
-                    <div className="flex items-start justify-between mb-8">
+                    <div className="flex justify-between mb-8 flex-col lg:flex-row items-stretch lg:items-start gap-4">
                         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-2">
                             <h2 className="text-xl font-extrabold">نشست های خبری</h2>
                             <span className="text-sm">از سواحل تا بازارها؛ کشف دنیای مناطق آزاد</span>
                         </div>
 
-                        <div className="flex items-center">
+                        <div className="flex items-center justify-center">
                             <button
                                 type="button"
                                 className={`active:text-gray-400 leading-0 p-2 disabled:opacity-0 disabled:cursor-default! ${id}-prev`}
@@ -27,7 +27,7 @@ const NewsSlider = () => {
                                 <i className="fa-regular fa-arrow-right" />
                             </button>
 
-                            <div className="home-news-pagination" />
+                            <div className="home-news-pagination w-auto!" />
 
                             <button
                                 type="button"

@@ -9,7 +9,7 @@ const VideoSec = () => {
     return (
         <div className="m-container">
             <div className="-mt-24 relative">
-                <div className="start-circle absolute -z-1 top-0 right-0 opacity-45 -translate-y-1/3" />
+                <div className="start-circle absolute -z-1 top-0 right-0 opacity-30 -translate-y-1/3" />
 
                 <div className="flex flex-col lg:flex-row items-start lg:items-center gap-2 mb-16">
                     <h2 className="text-xl font-extrabold">جاذبه های گردشگری</h2>

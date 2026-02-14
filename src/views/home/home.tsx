@@ -3,6 +3,7 @@ import AbovePlayer from "./abovePlayer/abovePlayer";
 import VideoSlider from "./videoSlider/videoSlider";
 import VideoSec from "./videoSec/videoSec";
 import NewsSlider from "./newsSlider/newsSlider";
+import ExperienceSec from "./experienceSec/experienceSec";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
                     <VideoSlider />
                     <VideoSec />
                     <NewsSlider />
+                    <ExperienceSec />
                 </div>
             </main>
         </>
