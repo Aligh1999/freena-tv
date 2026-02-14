@@ -4,6 +4,7 @@ import VideoSlider from "./videoSlider/videoSlider";
 import VideoSec from "./videoSec/videoSec";
 import NewsSlider from "./newsSlider/newsSlider";
 import ExperienceSec from "./experienceSec/experienceSec";
+import Footer from "components/footer/footer";
 
 const Home = () => {
     return (
@@ -11,7 +12,7 @@ const Home = () => {
             <Header />
 
             <main>
-                <div className="grid grid-cols-1 gap-16">
+                <div className="grid grid-cols-1 gap-16 pb-32">
                     <AbovePlayer />
                     <VideoSlider />
                     <VideoSec />
@@ -19,6 +20,8 @@ const Home = () => {
                     <ExperienceSec />
                 </div>
             </main>
+
+            <Footer />
         </>
     )
 }
