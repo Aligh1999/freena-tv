@@ -22,7 +22,6 @@ const SLIDES = [
 
 const Archive = () => {
     const id = useId();
-
     const [thumbsSwiper, setThumbsSwiper] = useState<ISwiper | null>(null);
 
     return (
