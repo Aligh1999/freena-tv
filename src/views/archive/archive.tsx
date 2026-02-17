@@ -1,7 +1,10 @@
 import Footer from "components/footer/footer";
 import Header from "components/header/header";
 import PageHead from "components/shared/pageHead";
+import { useState } from "react";
+import { Navigation, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as ISwiper } from "swiper/types";
 
 const SLIDES = [
     "13.jpg",
@@ -12,6 +15,8 @@ const SLIDES = [
 ]
 
 const Archive = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState<ISwiper | null>(null);
+
     return (
         <>
             <Header />
@@ -28,6 +33,8 @@ const Archive = () => {
                             <Swiper
                                 spaceBetween={16}
                                 slidesPerView={1}
+                                thumbs={{ swiper: thumbsSwiper }}
+                                modules={[Navigation, Thumbs]}
                             >
                                 {
                                     SLIDES.map((slide, i) => (
@@ -51,6 +58,9 @@ const Archive = () => {
                                     spaceBetween={16}
                                     slidesPerView={1}
                                     autoHeight
+                                    onSwiper={setThumbsSwiper}
+                                    watchSlidesProgress={true}
+                                    modules={[Navigation, Thumbs]}
                                 >
                                     {
                                         SLIDES.map((slide, i) => (

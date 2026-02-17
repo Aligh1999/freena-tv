@@ -1,6 +1,6 @@
 .btmGradient {
-    background: #161616;
-    background: linear-gradient(180deg, rgba(22, 22, 22, 1) 0%, rgba(22, 22, 22, 0) 100%);
+background: #161616;
+background: linear-gradient(0deg, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 50%, rgba(22, 22, 22, 0) 100%);
 }
 
 .lightboxBg {

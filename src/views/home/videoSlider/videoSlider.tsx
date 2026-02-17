@@ -95,7 +95,7 @@ const VideoSlider = () => {
                     </div>
                 </div>
 
-                <div className={`h-16 rounded-b-2xl ${style.btmGradient}`} />
+                <div className={`h-32 -translate-y-1/2 relative z-10 rounded-b-2xl ${style.btmGradient}`} />
             </div>
         </div>
     )
