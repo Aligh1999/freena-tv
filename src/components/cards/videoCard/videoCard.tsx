@@ -29,7 +29,7 @@ const VideoCard = (props: IProps) => {
                             src={`/temp/${image}`}
                             width={515}
                             height={300}
-                            className="rounded-xl"
+                            className="rounded-xl w-full h-auto"
                         />
                     </div>
 
