@@ -68,7 +68,7 @@ const VideoSlider = () => {
                                         centeredSlides
                                     >
                                         {
-                                            [...Array(4)].map((_, i) => (
+                                            [...Array(8)].map((_, i) => (
                                                 <SwiperSlide
                                                     key={`slide-${i}`}
                                                     className="group"
