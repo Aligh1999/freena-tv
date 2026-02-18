@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { useRoutes, type RouteObject } from "react-router";
+import About from "views/about/about";
 import Archive from "views/archive/archive";
 import FreeZones from "views/home/freeZones/freeZones";
 import Home from "views/home/home";
@@ -23,6 +24,10 @@ const RoutesProvider = () => {
             {
                 path: "freezones",
                 element: <FreeZones />
+            },
+            {
+                path: "about",
+                element: <About />
             }
         ] as RouteObject[]
     }, [])
