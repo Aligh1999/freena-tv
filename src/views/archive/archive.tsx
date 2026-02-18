@@ -32,7 +32,7 @@ const Archive = () => {
                 <section>
                     <div className="py-12">
                         <div className="m-container flex flex-col items-center gap-2">
-                            <h1 className="font-extrabold text-lg">منطقه آزاد ارس</h1>
+                            <h2 className="font-extrabold text-lg">منطقه آزاد ارس</h2>
                             <p className="text-sm text-[#A7A7A7]">
                                 شرکت فرینا برای شما دوستان عزیز چه خدماتی ارائه میدهند
                             </p>
@@ -146,7 +146,7 @@ const Archive = () => {
                 <section>
                     <div className="pt-12 pb-6">
                         <div className="m-container flex flex-col items-center gap-2">
-                            <h1 className="font-extrabold text-lg">جدید ترین اخبار</h1>
+                            <h2 className="font-extrabold text-lg">جدید ترین اخبار</h2>
                             <p className="text-sm text-[#A7A7A7]">
                                 شرکت فرینا برای شما دوستان عزیز چه خدماتی ارائه میدهند
                             </p>

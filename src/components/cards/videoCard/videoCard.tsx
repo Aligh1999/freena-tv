@@ -24,7 +24,7 @@ const VideoCard = (props: IProps) => {
                     background="transparent"
                     borderColor="transparent"
                 >
-                    <div className="p-3">
+                    <div className="p-2 w-full">
                         <img
                             src={`/temp/${image}`}
                             width={515}
