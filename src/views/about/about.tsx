@@ -33,11 +33,23 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="lg:w-96 lg:min-w-96 rounded-2xl overflow-hidden p-4 bg-white/3">
+                        <div className="lg:w-96 lg:min-w-96 rounded-2xl overflow-hidden p-4 bg-white/3 relative">
                             <img
                                 src="/images/about.png"
                                 className="lg:w-full lg:min-h-full object-cover rounded-xl mx-auto"
+                                width={521}
+                                height={545}
                             />
+
+                            <div className="fit-cover fit-center">
+                                <div className="size-28 backdrop-blur-xl rounded-2xl fit-center p-4">
+                                    <img
+                                        src="/images/logo/1.png"
+                                        width={357}
+                                        height={227}
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
 
