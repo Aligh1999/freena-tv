@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useRoutes, type RouteObject } from "react-router";
 import About from "views/about/about";
 import Archive from "views/archive/archive";
+import Contact from "views/contact/contact";
 import FreeZones from "views/home/freeZones/freeZones";
 import Home from "views/home/home";
 import VideoArchive from "views/videoArchive/videoArchive";
@@ -28,6 +29,10 @@ const RoutesProvider = () => {
             {
                 path: "about",
                 element: <About />
+            },
+            {
+                path: "contact",
+                element: <Contact />
             }
         ] as RouteObject[]
     }, [])

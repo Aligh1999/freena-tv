@@ -1,0 +1,1 @@
+export const MAP_TILE = "https://map.osiss.ir/tile/{z}/{x}/{y}.png";

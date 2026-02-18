@@ -8,6 +8,7 @@
     --font-feature-settings-eng: "ss00";
     --font-family: IRANSansX;
     --primary-color: #00275B;
+    --primary-color-dark: #002453;
 }
 
 * {
@@ -29,6 +30,7 @@ html {
 @theme {
     --font-sans: var(--font-family);
     --color-primary: var(--primary-color);
+    --color-primary-dark: var(--primary-color-dark);
 }
 
 @utility dir-ltr {
@@ -182,4 +184,22 @@ button {
             transform: translateY(0);
         }
     }
+}
+
+.field-c1 {
+    padding: 1.25rem;
+    border-radius: .5rem;
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(255, 255, 255, .05);
+    font-size: .875rem;
+    transition: background .2s;
+    width: 100%;
+
+    &:focus {
+        background: transparent;
+    }
+}
+
+textarea {
+    resize: none;
 }
