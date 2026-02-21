@@ -3,7 +3,7 @@ import VideoPlayer from "components/videoPlayer/videoPlayer";
 
 const AbovePlayer = () => {
     return (
-        <div className="bg-[url(./images/globe.png)] bg-no-repeat bg-center pt-16 relative overflow-hidden">
+        <div className="bg-[url(/images/globe.png)] bg-no-repeat bg-center pt-16 relative overflow-hidden">
             <div className="m-container p-0 lg:px-4 relative">
                 <div className="relative flex flex-col-reverse lg:flex-row items-start gap-4">
                     <div className="lg:w-96 lg:min-w-96 flex flex-nowrap lg:grid grid-cols-4 gap-4 relative px-4 lg:px-0 overflow-auto w-full">
