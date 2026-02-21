@@ -6,7 +6,7 @@ import "leaflet/dist/leaflet.css";
 import type { LatLngExpression } from "leaflet";
 import ReactTextareaAutosize from "react-textarea-autosize";
 
-const POSITION: LatLngExpression = [35.69909146960962, 51.337988656873506];
+const POSITION: LatLngExpression = [35.77145144559607, 51.41558842772512];
 
 const Contact = () => {
 
@@ -59,7 +59,7 @@ const Contact = () => {
                                             <li className="mb-4 last:mb-0 flex items-center gap-2">
                                                 <i className="fa-regular fa-at" />
                                                 <b>پست الکترونیک:</b>
-                                                <a href="mailto:+92175207000">publicrelations@freezones.ir</a>
+                                                <a href="mailto:info@freena.tv">info@freena.tv</a>
                                             </li>
 
                                             <li className="mb-4 last:mb-0 flex items-center gap-2">
@@ -73,7 +73,7 @@ const Contact = () => {
 
                                     <div className="rounded-2xl bg-linear-to-t from-[#161616] to-[#254CB1] flex flex-col items-center justify-center gap-8 py-8 lg:p-0">
                                         <p className="leading-8 px-10 text-center font-semibold">
-                                            برای دسترسی سریع و راحت به ساختمان خبرگذاری فرینا میتوانید از نرم افزار های مسیر یاب رو به رو استفاده کنید...
+                                            برای دسترسی سریع و راحت به ساختمان تلویزیون مناطف آزاد و ویژه اقتصادی میتوانید از نرم افزار های مسیر یاب رو به رو استفاده کنید...
                                         </p>
 
                                         <div className="flex">

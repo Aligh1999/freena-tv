@@ -3,16 +3,16 @@ export const FOOTER_NAVS = [
         title: "پیوند ها",
         class: "",
         navs: [
-            { title: "منطقه آزاد قشم", link: "/" },
-            { title: "منطقه آزاد ارس", link: "/" },
-            { title: "منطقه آزاد چابهار", link: "/" },
-            { title: "منطقه آزاد اروند", link: "/" },
-            { title: "منطقه آزاد انزلی", link: "/" },
-            { title: "منطقه آزاد کیش", link: "/" },
-            { title: "منطقه آزاد ماکو", link: "/" },
+            { title: "منطقه آزاد قشم", link: "https://www.qeshm.ir/fa/" },
+            { title: "منطقه آزاد ارس", link: "https://www.arasfz.ir/Intro" },
+            { title: "منطقه آزاد چابهار", link: "https://www.cfzo.ir/" },
+            { title: "منطقه آزاد اروند", link: "https://www.arvandfreezone.com/" },
+            { title: "منطقه آزاد انزلی", link: "https://www.anzalifz.ir/" },
+            { title: "منطقه آزاد کیش", link: "https://kish.ir/" },
+            { title: "منطقه آزاد ماکو", link: "https://www.makufz.org/" },
             {
                 title: "شورایعالی مناطق آزاد و ویژه اقتصادی",
-                link: "/",
+                link: "https://freena.ir/",
                 class: "col-span-full"
             }
         ]
@@ -35,11 +35,11 @@ export const FOOTER_NAVS = [
         title: "پیوند ها",
         class: "",
         navs: [
-            { title: "مقام معظم رهبری", link: "/" },
-            { title: "اطلاع رسانی دولت", link: "/" },
-            { title: "ریاست جمهوری", link: "/" },
-            { title: "خبرگزاری صدا و سیما", link: "/" },
-            { title: "ایرنا", link: "/" }
+            { title: "مقام معظم رهبری", link: "https://farsi.khamenei.ir/" },
+            { title: "اطلاع رسانی دولت", link: "https://dolat.ir/" },
+            { title: "ریاست جمهوری", link: "https://president.ir/" },
+            { title: "خبرگزاری صدا و سیما", link: "https://www.iribnews.ir/" },
+            { title: "ایرنا", link: "https://www.irna.ir/" }
         ]
     }
 ]

@@ -78,10 +78,10 @@ const About = () => {
 
                             <li>
                                 <a
-                                    href="#"
-                                    className="tel:info@freena.ir font-bold"
+                                    href="mailto:info@freena.tv"
+                                    className="font-bold"
                                 >
-                                    info@freena.ir
+                                    info@freena.tv
                                 </a>
                             </li>
                         </ul>

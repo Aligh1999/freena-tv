@@ -68,8 +68,8 @@ const Footer = () => {
                                     <span className="opacity-70">
                                         <span>پست الکترونیک: </span>
 
-                                        <a href="mailto:publicrelations@freena.ir" className="dir-ltr text-right inline-block">
-                                            publicrelations@freena.ir
+                                        <a href="mailto:info@freena.tv" className="dir-ltr text-right inline-block">
+                                            info@freena.tv
                                         </a>
                                     </span>
                                 </li>
@@ -96,13 +96,14 @@ const Footer = () => {
                                                         key={`sec-${i}-${j}`}
                                                         className={nav.class || ""}
                                                     >
-                                                        <Link
-                                                            to={nav.link}
+                                                        <a
+                                                            href={nav.link}
                                                             className="flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity"
+                                                            target="_blank"
                                                         >
                                                             <i className="fa-solid fa-caret-left text-[.5rem]" />
                                                             {nav.title}
-                                                        </Link>
+                                                        </a>
                                                     </li>
                                                 ))
                                             }
@@ -117,9 +118,9 @@ const Footer = () => {
                 <div className="mt-16">
                     <div className="bg-[#001826] text-center dir-ltr py-4">
                         <div className="m-container">
-                            <b className="eng-number font-semibold">
-                                copyright  2024 freena.ir. all rights reserved.
-                            </b>
+                            <span className="eng-number">
+                                copyright 2026 freena.tv .all rights reserved.
+                            </span>
                         </div>
                     </div>
                 </div>
