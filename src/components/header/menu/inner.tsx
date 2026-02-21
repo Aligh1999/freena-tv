@@ -13,23 +13,23 @@ const NAVS = [
         title: "پخش زنده"
     },
     {
-        link: "/",
+        link: "/archives",
         title: "اخبار مناطق ویژه"
     },
     {
-        link: "/",
+        link: "/videos",
         title: "اخبار مناطق آزاد"
     },
     {
-        link: "/",
+        link: "/freezones",
         title: "چند رسانه ای"
     },
     {
-        link: "/",
+        link: "/about",
         title: "درباره ما"
     },
     {
-        link: "/",
+        link: "/contact",
         title: "تماس با ما"
     }
 ]
@@ -106,7 +106,7 @@ const Inner = () => {
                                     <div className="flex items-center bg-[#011B2A] text-sm rounded-lg p-4 gap-2">
                                         <i className="fa-light fa-calendar-lines" />
                                         <span>
-                                            <b>امروز</b> {moment.unix(nowTimestamp()).format("dddd jDD jMMMM jYYYY")} | سال تولید، دانش بنیان، اشتغال آفرینی
+                                            <b>امروز</b> {moment.unix(nowTimestamp()).format("dddd jDD jMMMM jYYYY")} | سال "سرمایه‌گذاری برای تولید"
                                         </span>
                                     </div>
 
